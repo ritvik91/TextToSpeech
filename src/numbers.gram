@@ -1,0 +1,40 @@
+ /* some text comments and some more */
+
+#JSGF V1.0;
+grammar javax.speech.demo;
+//grammar com.acme.actions;
+
+public <command> = <action> [<object>] [<polite>];
+<action> = file {file}|new {new} |open {open} | close{close} |save {save} |save as { save as } | exit {exit}|cancel {cancel}|yes {yes}|no {no};
+<object> = [<this_that_etc>] window | door;
+<this_that_etc> = a | the | this | that | the current;
+<polite> = please | kindly;
+
+public <command1>=<action1> [<object1>] [<polite1>];
+<action1> = undo {undo} |redo {redo} |cut {cut} | copy {copy} |paste {paste} |select all {select all}|find {find} |replace {replace}|find next {find next}|replace next {replace next};
+<object1> = [<this_that_etc1>] window | door;
+<this_that_etc1> = a | the | this | that | the current;
+<polite1> = please | kindly;
+
+public <command2>=<action2> [<object2>] [<polite2>];
+<action2> =  play {play} | stop {stop} |calculator{calculator};
+<object2> = [<this_that_etc2>] window | door;
+<this_that_etc2> = a | the | this | that | the current;
+<polite2> = please | kindly;
+
+
+public <command3>=zero{0}|one{1}|two {2}|three{3}|four{4}|five{5}|six{6}|seven{7}|eight{8}|nine{9}|plus {plus} |minus {minus}|into{into}|divide{divide}|dot{dot}|equal {equal};
+
+public <command4>=shutdown {shutdown}|restart {restart} |logoff{logoff};
+
+public <command5>=style bold {style bold}|style italic {style italic} |style underline {style underline};
+
+public <command6>=size 10 {size 10} |size 12 {size 12}|size 18 {size 18} | size 20 {size 20} |size 22 {size 22} | size 32 {size 32} |size 36 {size 36} | size 46 {size 46} |size 52 {size 52} | size 60 {size 60} | size 72 {size 72};
+
+public <command7>=black {black} |green {green}|blue {blue} | red {red} | yellow {yellow} ;
+
+public <command8>=font arial {font arial} | font arial black {font arial black} | font arial narrow {font arial narrow} | font book antiqua {font book antiqua } | font bookman old style {font bookman old style} | font courier {font courier} | font courier new {font courier new}| font monotype corsiva {font monotype corsiva} | font times new roman {font times new roman} |font verdana {font verdana};
+
+public <command9>=left align {left align} | center {center align} |right {right align};
+
+public <comman10>=please|give|let|please shut down computer;
